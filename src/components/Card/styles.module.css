@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: beige;
+  align-items: center;
+  border: 1px solid black;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.container:hover {
+  border-color: brown;
+  transform: rotate(1deg);
+}
