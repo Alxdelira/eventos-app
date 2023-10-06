@@ -12,7 +12,7 @@ export default function EventoPage() {
   async function getData() {
     try {
       if (page) {
-        const res = await fetch(`http://localhost:3000/eventos/${page}`, {
+        const res = await fetch(`http://localhost:3001/eventos/${page}`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json"

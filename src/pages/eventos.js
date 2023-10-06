@@ -8,7 +8,7 @@ export default function Eventos() {
 
   async function getData() {
     try {
-      const res = await fetch("http://localhost:3000/eventos", {
+      const res = await fetch("http://localhost:3001/eventos", {
         method: "GET",
         headers: {
           "Content-Type": "application/json"
