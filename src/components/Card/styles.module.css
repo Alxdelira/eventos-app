@@ -1,14 +1,18 @@
 .container {
   display: flex;
   flex-direction: column;
-  background-color: beige;
+  background-color: black;
   align-items: center;
   border: 1px solid black;
   padding: 1rem;
   gap: 1rem;
 }
+.card {
+  text-decoration: none;
+  color: #ffffff;
 
-.container:hover {
-  border-color: brown;
-  transform: rotate(1deg);
 }
+.card:hover {
+  color: aqua;
+}
+

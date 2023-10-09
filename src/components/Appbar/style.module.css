@@ -1,0 +1,25 @@
+.container {
+
+     background-color: #000;
+     padding: .5rem
+    
+}
+
+.lista {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 1rem;
+    list-style: none
+}
+
+.item > a {
+ margin-left: 1rem;
+ text-decoration: none;
+ color: #ffffff;
+}
+
+.item > a:hover {
+    color: aqua;
+    
+}

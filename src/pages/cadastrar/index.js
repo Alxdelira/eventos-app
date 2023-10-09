@@ -1,6 +1,5 @@
 import { useState } from "react";
 import axios from "axios";
-import { CLIENT_STATIC_FILES_RUNTIME_POLYFILLS_SYMBOL } from "next/dist/shared/lib/constants";
 
 export default function Cadastrar() {
     const [evento, setEvento] = useState({
@@ -147,6 +146,13 @@ export default function Cadastrar() {
                                         })}
                                     />
                                     <button
+                                        style={{
+                                            color:'white',
+                                            backgroundColor: '#2f2f2f',
+                                            padding:'5px',
+                                            borderRadius: '20px',
+                                                                                    
+                                        }}
                                         type="submit"
                                     >Cadastrar</button>
                                 </div>

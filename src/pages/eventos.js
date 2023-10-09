@@ -1,6 +1,7 @@
 import Card from "@/components/Card"
 import Link from "next/link";
 import { useEffect, useState } from "react"
+import style from '../components/Card/styles.module.css'
 
 export default function Eventos() {
 
@@ -25,25 +26,21 @@ export default function Eventos() {
     getData();
   }, [])
 
-  return (
+  return (<>   
     <main>
-
-      <div style={{ display: "flex", justifyContent: "center", marginBottom: "2rem", marginTop: "1rem" }}>
-        <h1>Plataforma de   Eventos</h1>
-      </div>
-
-      <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "1rem" }}>
+     <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "3rem", marginTop: '1rem' }}>
         {response?.map((card) => (
-          <Link href={`/eventos/${card.id}`}>
+          <Link href={`/eventos/${card.id}`} className={style.card}>
             <Card key={card.id}
               titulo={card.titulo}
               dataInicio={card.dataInicio}
               dataFim={card.dataFim}
-            />
+              />
           </Link>
         ))}
       </div>
 
     </main>
+  </>
   )
 }
